@@ -1,0 +1,183 @@
+/* Universal CSS */
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+
+/* common */
+
+.icon {
+  cursor: pointer;
+  padding: 12px;
+}
+
+.mb5 {
+  margin-bottom: 25px;
+  background-color: green;
+}
+
+.header-logo i {
+  color: red;
+  margin-right: 5px;
+}
+
+/* header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid black;
+  padding: 5px 20px;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+}
+
+.fa-youtube {
+  color: red;
+}
+
+.header-logo {
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+header .icon:hover:not(.fa-youtube, .fa-magnifying-glass, .microphone) {
+  border-radius: 70px;
+  background-color: rgb(245, 239, 239);
+}
+
+.header-center .microphone {
+  border-radius: 50%;
+  background-color: rgb(245, 239, 239);
+}
+
+.header-center {
+  display: flex;
+  align-items: center;
+}
+
+.header-center input {
+  padding: 10px;
+  border-radius: 30px;
+  width: 500px;
+  border: none;
+  font-size: 16px;
+}
+
+.youtube-search-input {
+  display: flex;
+  border: 1px solid black;
+  border-radius: 30px;
+  margin: 2px;
+}
+
+.header-center .microphone {
+  margin-left: 20px;
+}
+
+.header-center .search-icon {
+  background-color: rgb(245, 239, 239);
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  padding: 0px 10px;
+  border-left: 1px solid black;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+}
+
+.header-right .icon {
+  margin: 0px 10px;
+}
+
+.container {
+  display: flex;
+}
+
+.side-bar {
+  padding: 20px;
+  width: 12%;
+  font-size: large;
+  border-right: 1px solid black;
+}
+
+.videos {
+  width: 80%;
+  padding: 30px 10px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.side-bar i {
+  margin-right: 10px;
+}
+
+.side-bar ul li {
+  list-style: none;
+  padding: 10px;
+  cursor: pointer;
+}
+.fa-youtube {
+  color: black;
+}
+
+.side-bar-signin {
+  border: 0.5px solid rgb(220, 220, 224);
+  border-radius: 40px;
+  color: rgb(0, 106, 255);
+  width: max-content;
+}
+
+.side-bar ul li:hover {
+  background-color: rgb(245, 238, 238);
+  border-radius: 10px;
+}
+
+.sidebar-division {
+  margin: 10px 0px;
+}
+
+.card {
+  width: 30%;
+  cursor: pointer;
+  height: max-content;
+  margin-bottom: 40px;
+}
+
+.card .thumbnail {
+  width: 100%;
+}
+
+.video-details {
+  display: flex;
+  padding: 10px 0px;
+}
+
+.channel-logo {
+  margin-right: 15px;
+  border-radius: 60px;
+  width: 40px;
+  height: 40px;
+}
+
+.video-credits {
+  display: flex;
+  flex-direction: column;
+}
+
+.video-credits > * {
+  margin-right: 5px;
+}
